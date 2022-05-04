@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  grid-template-columns: minmax(100px, 300px) minmax(275px, 1400px);
+  grid-template-rows: minmax(100px, 200px) 1fr 100px;
+}
+
+header {
+  background-color: aqua;
+  
+}
+
+nav {
+  background-color: blue;
+}
+
+main {
+  background-color: blueviolet;
+}
+
+/* FOOTER */
+
+.attribution {
+  height: 20px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #FCFAF9;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
