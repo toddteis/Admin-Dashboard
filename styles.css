@@ -9,6 +9,18 @@
   box-sizing: inherit;
 }
 
+:root {
+  --blue-curious:#1c94d3;
+  --white-catskill: #e2e9f1;
+  --grey-dove: #656363;
+  --yellow-tulip-tree: #e3b030;
+  --black-grey-code: #101010;
+  --grey-regent: #8095a0;
+  --martini: #b39fa1;
+  --grey-tower: #b1b9be;
+  --chino: #cdc3a1;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -24,7 +36,7 @@ html {
 }
 
 nav {
-  background-color: aqua;
+  background-color: var(--blue-curious);
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
@@ -50,13 +62,13 @@ nav > ul > li {
 }
 
 header {
-  background-color: blue;
+  background-color: #ffffff;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 main {
-  background-color: blueviolet;
+  background-color: var(--white-catskill);
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
