@@ -30,7 +30,7 @@ html {
 .grid-container {
   display: grid;
   grid-template-columns: 52px minmax(325px, auto);
-  grid-template-rows: minmax(100px, 20%) auto;
+  grid-template-rows: minmax(140px, 20%) auto;
 }
 
 .icon-size-sm {
@@ -43,8 +43,11 @@ html {
 
 /* HEADER SECTION */
 
-.header {
+header {
  background-color: blueviolet;
+ display: grid;
+ grid-template-columns: minmax(325px, auto);
+ grid-template-rows: 40px 40px 60px;
 }
 
 .top-header {
@@ -57,6 +60,17 @@ html {
 
 .search {
  background-color: aqua;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.search > input {
+  background-color: var(--white-catskill);
+  border: none;
+  height: 1rem;
+  border-radius: 0.5rem;
+  width: auto;
 }
 
 .welcome {
@@ -81,7 +95,6 @@ html {
 .welcome {
   display: none;
   align-items: center;
-  height: 150px;
 }
 
 .avatar {
@@ -89,32 +102,34 @@ html {
   justify-content: center;
   align-items: center;
   background-color: var(--yellow-tulip-tree);
-  border-radius: 500px;
+
   font-weight: 700;
 }
 
 .avatar-small {
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 0.8rem;
 }
 
 .avatar-large {
-  width: 100px;
-  height: 100px;
-  font-size: 3rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 1.2rem;
 }
 
 .welcome-text > p:first-child {
   font-size: 0.8rem;
   margin-top: 0;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 
 .welcome-text > p {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 
 }
 
@@ -163,12 +178,6 @@ nav > ul > li > a > span {
   display: none ;
 }
 
-header {
-  background-color: #ffffff;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
 main {
   background-color: var(--white-catskill);
   grid-column: 2 / 3;
@@ -192,12 +201,9 @@ main {
 /* MEDIA QUERIES */
 
 @media only screen and (min-width: 519px) {
+
   .grid-container {
     grid-template-columns: minmax(175px, 250px) minmax(325px, auto);
-  }
-
-  .welcome {
-    display: flex;
   }
 
   nav > ul > li > a > span {
@@ -220,3 +226,18 @@ main {
   }
 }
 
+@media only screen and (min-width: 900px) {
+
+  .grid-container {
+    grid-template-rows: minmax(100px, 20%) auto;
+  }
+
+  header {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 40px 60px;
+   }
+
+  .welcome {
+    display: flex;
+  }
+}
