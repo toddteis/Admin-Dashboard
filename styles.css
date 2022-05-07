@@ -33,6 +33,14 @@ html {
   grid-template-rows: minmax(100px, 20%) auto;
 }
 
+.icon-size-sm {
+  height: 18px;
+}
+
+.icon-size-med {
+  height: 24px;
+}
+
 /* HEADER SECTION */
 
 .header {
@@ -57,6 +65,13 @@ html {
 
 .notification {
   background-color: magenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification > div {
+  margin: 0 30px;
 }
 
 .controls {
@@ -73,10 +88,21 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
   background-color: var(--yellow-tulip-tree);
   border-radius: 500px;
+  font-weight: 700;
+}
+
+.avatar-small {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.avatar-large {
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
 }
 
 .welcome-text > p:first-child {
@@ -135,10 +161,6 @@ nav > ul > li > a {
 
 nav > ul > li > a > span {
   display: none ;
-}
-
-.icon-size-sm {
-  height: 18px;
 }
 
 header {
