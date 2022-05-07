@@ -33,6 +33,67 @@ html {
   grid-template-rows: minmax(100px, 20%) auto;
 }
 
+/* HEADER SECTION */
+
+.header {
+ background-color: blueviolet;
+}
+
+.top-header {
+  background-color: yellowgreen;
+}
+
+.bottom-header {
+ background-color: honeydew;
+}
+
+.search {
+ background-color: aqua;
+}
+
+.welcome {
+ background-color: navajowhite;
+}
+
+.notification {
+  background-color: magenta;
+}
+
+.controls {
+  background-color: coral;
+}
+
+.welcome {
+  display: none;
+  align-items: center;
+  height: 150px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: var(--yellow-tulip-tree);
+  border-radius: 500px;
+}
+
+.welcome-text > p:first-child {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.welcome-text > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 5px;
+
+}
+
+/* NAV SECTION */
+
 nav {
   background-color: var(--blue-curious);
   grid-column: 1 / 2;
@@ -113,6 +174,9 @@ main {
     grid-template-columns: minmax(175px, 250px) minmax(325px, auto);
   }
 
+  .welcome {
+    display: flex;
+  }
 
   nav > ul > li > a > span {
     display: block ;
