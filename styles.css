@@ -199,7 +199,10 @@ main {
 }
 
 .projects-container {
-
+  display: grid;
+  grid-template-columns: minmax(305px, 400px);
+  grid-template-rows: repeat(6, 130px);
+  gap: 10px 0;
 }
 
 .card {
