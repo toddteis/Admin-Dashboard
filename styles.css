@@ -244,17 +244,41 @@ h1, h2 {
   margin-top: 10px;
 }
 
-.announcements-container {
+.announcement-card {
   display: grid;
   grid-template-columns: minmax(305px, 400px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-rows: repeat(3, 240px);
+}
+
+.announcements-container {
+
   padding: 15px;
   border-radius: 5px;
   background-color: #ffffff;
 }
 
+.announcements-container > div:first-child {
+  margin-top: 0;
+}
+
+.announcements-container > div:last-child {
+  border-bottom: none;
+}
+
 .announcement {
-  border-bottom: 1px solid #656363;
+  border-bottom: 1px solid var(--white-catskill);
+  height: 60px;
+  margin-top: 15px;
+}
+
+.announcement > h4 {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.announcement > p {
+    color: var(--grey-dove);
+    font-size: 0.7rem;
 }
 
 .trending {
