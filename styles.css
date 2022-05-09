@@ -189,14 +189,15 @@ main {
   grid-row: 2 / 3;
   display: grid;
   grid-template-columns: minmax(305px, auto);
-  grid-template-rows: auto 100px 100px;
+  grid-template-rows: auto auto 100px;
   padding: 20px 10px;
 }
 
-.projects > h1 {
+h1, h2 {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
+
 
 .projects-container {
   display: grid;
@@ -240,7 +241,20 @@ main {
 }
 
 .announcements {
-  background-color: darkcyan;
+  margin-top: 10px;
+}
+
+.announcements-container {
+  display: grid;
+  grid-template-columns: minmax(305px, 400px);
+  grid-template-rows: repeat(3, 100px);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.announcement {
+  border-bottom: 1px solid #656363;
 }
 
 .trending {
