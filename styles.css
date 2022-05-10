@@ -58,8 +58,8 @@ header {
 .search > input {
   background-color: var(--white-catskill);
   border: none;
-  height: 1rem;
-  border-radius: 0.5rem;
+  height: 1.3rem;
+  border-radius: 0.65rem;
   width: 70%;
   margin-left: 20px;
   font-size: 0.8rem;
@@ -86,7 +86,7 @@ header {
 
 .welcome > div {
   margin-left: 40px;
-  margin-right: 25px;
+  margin-right: clamp(0, 10px, 25px);
 }
 
 .avatar {
@@ -206,7 +206,6 @@ h1, h2 {
 h2 {
   margin-top: 20px;
 }
-
 
 .projects-container {
   display: grid;
