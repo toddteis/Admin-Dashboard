@@ -75,6 +75,8 @@ header {
 
 .notification > div {
   margin: 0 30px;
+  margin-left: 40px;
+  margin-right: 25px;
 }
 
 .welcome {
@@ -82,20 +84,25 @@ header {
   align-items: center;
 }
 
+.welcome > div {
+  margin-left: 40px;
+  margin-right: 25px;
+}
+
 .avatar {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  margin-left: 40px;
-  margin-right: 25px;
+  cursor: pointer;
 }
 
 .avatar-small {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  font-size: 0.7rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .avatar-large {
@@ -103,6 +110,7 @@ header {
   height: 50px;
   border-radius: 25px;
   font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .welcome-text > p:first-child {
@@ -193,6 +201,10 @@ h1, h2 {
   font-size: 1.2rem;
 }
 
+h2 {
+  margin-top: 20px;
+}
+
 
 .projects-container {
   display: grid;
@@ -246,7 +258,7 @@ h1, h2 {
 }
 
 .announcements-container {
-  padding: 15px;
+  padding: 25px;
   border-radius: 5px;
   background-color: #ffffff;
 }
@@ -287,9 +299,18 @@ h1, h2 {
 }
 
 .trending-container {
-  padding: 15px;
+  padding: 25px;
   border-radius: 5px;
   background-color: #ffffff;
+}
+
+.trending-brief {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.trending-brief > div:first-child {
+  margin-right: 40px;
 }
 
 /* USER PROFILES */
