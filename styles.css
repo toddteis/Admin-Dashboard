@@ -293,6 +293,16 @@ h2 {
   margin-bottom: 30px;
 }
 
+.trending-text > p {
+    color: var(--grey-dove);
+    font-size: 0.8rem;
+}
+
+.trending-text > h5 {
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+
 .trending-card {
   display: grid;
   grid-template-columns: minmax(305px, 400px);
@@ -521,6 +531,15 @@ body {
   .trending-card {
     grid-template-columns: auto;
     grid-template-rows: 300px;
+  }
+
+  .trending-container {
+    padding: 30px 25px;
+  }
+
+  .trending-brief {
+    display: flex;
+    margin-bottom: 26px;
   }
 }
 
