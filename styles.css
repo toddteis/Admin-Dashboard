@@ -415,7 +415,8 @@ body {
   }
 
   header {
-    grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-columns: minmax(180px, 940px) minmax(150px, 450px);
     grid-template-rows: 60px 80px;
    }
 
