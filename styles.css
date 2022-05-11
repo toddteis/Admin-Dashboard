@@ -35,6 +35,7 @@ html {
 
 .icon-size-sm {
   height: 18px;
+  cursor: pointer;
 }
 
 /* HEADER SECTION */
@@ -137,6 +138,7 @@ button {
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 /* NAV SECTION */
@@ -148,7 +150,7 @@ nav {
 }
 
 nav > ul:first-child {
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 30px;
 }
 
@@ -159,7 +161,7 @@ nav > ul {
   flex-direction: column;
   align-items: center;
   list-style-type: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -182,6 +184,12 @@ nav > ul > li > a {
 
 nav > ul > li > a > span {
   display: none ;
+}
+
+.active {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor:default;
 }
 
 /* MAIN SECTION */
@@ -228,6 +236,7 @@ h2 {
 .card-text > h3 {
   margin-bottom: 5px;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .card-text > p {
@@ -242,6 +251,7 @@ h2 {
 
 .socials > img {
   height: 18px;
+  cursor: pointer;
 }
 
 .socials > img:nth-child(2) {
@@ -276,6 +286,7 @@ h2 {
   border-bottom: 1px solid var(--white-catskill);
   height: 60px;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .announcement > h4 {
@@ -318,6 +329,7 @@ h2 {
 .trending-brief {
   display: flex;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .trending-brief > div:first-child {
@@ -415,7 +427,6 @@ body {
   }
 
   header {
-    /* grid-template-columns: 2fr 1fr; */
     grid-template-columns: minmax(180px, 940px) minmax(150px, 450px);
     grid-template-rows: 60px 80px;
    }
