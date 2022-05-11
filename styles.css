@@ -451,7 +451,7 @@ body {
 
   main {
     grid-template-columns: minmax(300px, auto) minmax(250px, 300px);
-    grid-template-rows: 320px 320px;
+    grid-template-rows: 331.5px 331.5px;
     padding: 20px 10px;
     gap: 20px 20px;
   }
@@ -501,15 +501,29 @@ body {
 
   .announcement-card {
     grid-template-columns: auto;
+    grid-template-rows: 300px;
   }
 
+  .announcements-container {
+    padding: 30px 25px;
+  }
+
+  .announcement {
+    height: 80px;
+    margin-top: 10px;
+  }
 
   .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    /* margin-top: 320px; */
+  }
+
+  .trending-card {
+    grid-template-columns: auto;
+    grid-template-rows: 300px;
   }
 }
+
 
 @media only screen and (min-width: 1100px) {
   
